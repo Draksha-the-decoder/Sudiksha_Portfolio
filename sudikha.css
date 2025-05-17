@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #111;
+ font-family: 'Montserrat', sans serif;
+}
+section{
+margin: 20px;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(33,255,214,0.72);
+  margin: 30px;
+  position: relative;
+  transition: transform .1s ease-in-out;
+
+}
+
+.link::before, .link::after{
+  content: "";
+  position: absolute;
+  background-color: rgba(33,255,214,0.72);
+  transition: transform .5s;
+}
+
+/* LINK 1 CODE STARTS HERE */
+.link1::after{
+  left: 0;
+  width: 100%;
+  height: 1px;
+  bottom: -10px;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.link1:hover::after{
+    transform: scaleX(1);
+}
+/* LINK 1 CODE ENDS HERE */
+
+/* LINK 2 CODE STARTS HERE */
+
+.link2::before,
+.link2::after{
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  
+}
+.link2::before{
+  top: -10px;
+}
+.link2::after{
+  bottom: -10px;
+}
+.link2:hover::before,
+.link2:hover::after{
+      transform: scaleX(1);
+}
+
+/* LINK 2 CODE ENDS HERE */
+
+/* LINK 3 CODE STARTS HERE */
+
+.link3::before,
+.link3::after{
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: center;
+  
+}
+.link3::before{
+  top: -10px;
+}
+.link3::after{
+  bottom: -10px;
+}
+.link3:hover::before,
+.link3:hover::after{
+      transform: scaleX(1);
+}
+
+/* LINK 3 CODE ENDS HERE */
+
+/* LINK 4 STARTS STARTS HERE */
+
+.link4::before,
+.link4::after{
+  height: 100%;
+  width: 1px;
+  left: 1;
+  transition: transform .3s;
+  transform: scaleY(0);
+  
+}
+.link4::before{
+  left: -10px;
+  transform-origin: top;
+}
+.link4::after{
+  right: -10px;
+  transform-origin: bottom;
+}
+.link4:hover::before,
+.link4:hover::after{
+      transform: scaleY(1);
+}
+
+/* LINK 4 CODE ENDS HERE */
+
+/* LINK 5 STARTS STARTS HERE */
+.link5{
+padding: 10px;
+}
+.link5::before,
+.link5::after{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-color: rgba(33,255,214,0.72);
+  background-color: transparent;
+}
+.link5::before{
+  border-width: 1px 0;
+  transform: scaleX(0);
+}
+.link5::after{
+  border-width: 0 1px ;
+  transform: scaleY(0);
+}
+.link5:hover::before,
+.link5:hover::after{
+      transform: scale(1);
+}
+
+/* LINK 5 CODE ENDS HERE */
